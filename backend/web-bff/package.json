@@ -1,0 +1,18 @@
+{
+  "name": "bffbun-web-bff",
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "bun --inspect=0.0.0.6499 --watch src/index.ts",
+    "start": "bun src/index.ts"
+  },
+  "dependencies": {
+    "@elysiajs/cors": "^1.2.0",
+    "@elysiajs/static": "^1.2.0",
+    "@bffbun/shared": "workspace:*",
+    "elysia": "^1.2.0"
+  },
+  "devDependencies": {
+    "drizzle-kit": "^0.30.0"
+  }
+}

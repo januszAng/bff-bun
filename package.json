@@ -1,0 +1,19 @@
+{
+  "name": "bff-bun",
+  "devDependencies": {
+    "@biomejs/biome": "2.4.16",
+    "husky": "^9.1.7"
+  },
+  "private": true,
+  "scripts": {
+    "lint": "bunx @biomejs/biome check .",
+    "lint:fix": "bunx @biomejs/biome check --write .",
+    "test": "bun test"
+  },
+  "type": "module",
+  "workspaces": [
+    "backend/web-bff",
+    "backend/shared",
+    "frontend/web"
+  ]
+}

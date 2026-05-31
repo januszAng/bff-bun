@@ -1,0 +1,12 @@
+{
+  "name": "@bffbun/shared",
+  "version": "0.1.0",
+  "type": "module",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "dependencies": {
+    "@connectrpc/connect": "^2.0.1",
+    "@connectrpc/connect-node": "^2.0.1",
+    "drizzle-orm": "^0.39.0"
+  }
+}
