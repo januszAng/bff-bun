@@ -1,5 +1,5 @@
-import { env } from "../env.js";
 import { defineConfig } from "drizzle-kit";
+import { env } from "../env.js";
 
 export default defineConfig({
   // Path where migration SQL files will be generated
