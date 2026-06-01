@@ -1,12 +1,4 @@
-import {
-  pgTable,
-  uuid,
-  varchar,
-  text,
-  timestamp,
-  integer,
-  real,
-} from "drizzle-orm/pg-core";
+import { integer, pgTable, real, text, timestamp, uuid, varchar } from "drizzle-orm/pg-core";
 
 // 1. Decks Table
 // Represents a collection of flashcards owned by a specific user

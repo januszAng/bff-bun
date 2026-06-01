@@ -1,7 +1,7 @@
-import { Elysia } from "elysia";
 import { cors } from "@elysiajs/cors";
 import { staticPlugin } from "@elysiajs/static";
 import { verifyUserSession } from "./middlewares/authHook.js";
+import { Elysia } from "elysia";
 
 const app = new Elysia()
   // 1. Global CORS (useful if we run front and back on different ports during dev)
@@ -9,9 +9,7 @@ const app = new Elysia()
 
   // 2. Custom Lightweight Logger (Morgan alternative)
   .onRequest(({ request }) => {
-    console.log(
-      `[${new Date().toISOString()}] ${request.method} ${request.url}`,
-    );
+    console.log(`[${new Date().toISOString()}] ${request.method} ${request.url}`);
   })
 
   // 3. Serve frontend dist files and uploaded images (No CORS issues on production!)
@@ -56,6 +54,4 @@ const app = new Elysia()
   // 4. Start the server
   .listen(process.env.PORT || 8080);
 
-console.log(
-  `🚀  Web BFF is running at ${app.server?.hostname}:${app.server?.port}`,
-);
+console.log(`🚀  Web BFF is running at ${app.server?.hostname}:${app.server?.port}`);

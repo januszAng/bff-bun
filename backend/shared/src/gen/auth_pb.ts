@@ -3,18 +3,8 @@
 /* eslint-disable */
 
 import type { Message } from "@bufbuild/protobuf";
-import type {
-  GenEnum,
-  GenFile,
-  GenMessage,
-  GenService,
-} from "@bufbuild/protobuf/codegenv2";
-import {
-  enumDesc,
-  fileDesc,
-  messageDesc,
-  serviceDesc,
-} from "@bufbuild/protobuf/codegenv2";
+import type { GenEnum, GenFile, GenMessage, GenService } from "@bufbuild/protobuf/codegenv2";
+import { enumDesc, fileDesc, messageDesc, serviceDesc } from "@bufbuild/protobuf/codegenv2";
 
 /**
  * Describes the file auth.proto.
@@ -266,8 +256,7 @@ export const ForgotPasswordRequestSchema: GenMessage<ForgotPasswordRequest> =
 /**
  * @generated from message auth.v1.ForgotPasswordResponse
  */
-export type ForgotPasswordResponse =
-  Message<"auth.v1.ForgotPasswordResponse"> & {};
+export type ForgotPasswordResponse = Message<"auth.v1.ForgotPasswordResponse"> & {};
 
 /**
  * Describes the message auth.v1.ForgotPasswordResponse.
@@ -303,8 +292,7 @@ export const ResetPasswordRequestSchema: GenMessage<ResetPasswordRequest> =
 /**
  * @generated from message auth.v1.ResetPasswordResponse
  */
-export type ResetPasswordResponse =
-  Message<"auth.v1.ResetPasswordResponse"> & {};
+export type ResetPasswordResponse = Message<"auth.v1.ResetPasswordResponse"> & {};
 
 /**
  * Describes the message auth.v1.ResetPasswordResponse.

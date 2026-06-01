@@ -1,6 +1,6 @@
+import * as schema from "@bffbun/shared";
 import { drizzle } from "drizzle-orm/postgres-js";
 import postgres from "postgres";
-import * as schema from "@bffbun/shared";
 import { env } from "../../env.js";
 
 // Disable prefetching to work smoothly with serverless/containerized environments

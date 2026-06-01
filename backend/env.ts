@@ -15,6 +15,7 @@ const envSchema = z.object({
   DB_POOL_MAX: z.coerce.number().positive().default(5),
   DB_CONNECT_TIMEOUT: z.coerce.number().positive().default(10),
   DB_IDLE_TIMEOUT: z.coerce.number().positive().default(30),
+  AUTH_SERVICE_URL: z.string(),
 });
 
 export type Env = z.infer<typeof envSchema>;
@@ -24,7 +25,6 @@ let env: Env;
 
 try {
   console.log("🔍 Validating environment variables...");
-  console.log(process.env); // Log the raw environment variables for debugging
   env = envSchema.parse(process.env);
 } catch (err) {
   if (err instanceof z.ZodError) {
